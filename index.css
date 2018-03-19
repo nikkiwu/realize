@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+
 }
 body, html{
     height: 100%;
@@ -28,10 +30,8 @@ ul.topnav li.center {
 }
 ul.topnav li.right {float: right;}
 .hero-image {
-    background-image: url("https://i.pinimg.com/originals/3b/a2/44/3ba244351f5746f3a0ad08fd28e666ff.jpg");
+    background: url("https://i.pinimg.com/originals/d1/45/73/d14573ed4c8b5ada352e3f1f349fa03b.jpg") center no-repeat;
     height: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: contain;
     position: relative;
 }
@@ -50,7 +50,6 @@ ul.topnav li.right {float: right;}
 div.gallery img {
     width: 100%;
     height: auto;
-    padding: 0px;
 }
 
 .responsive {
@@ -67,14 +66,21 @@ div.gallery img {
     padding: 40px;
 }
 @media only screen and (max-width: 700px) {
-    .responsive, .middlephoto, .supreme {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+    .middlephoto{
         width: 49.99999%;
         margin: 6px 0;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    .responsive, .middlephoto, .supreme{
+    .responsive {
+        width: 100%;
+    }
+    .middlephoto{
         width: 100%;
     }
 }
@@ -89,25 +95,11 @@ div.gallery img {
     clear: both;
 }
 
-.video{
-    height: 100%;
-    padding: 40px 40px;
-}
-
-.video h1{
-    float: left;
-    text-align: left;
-    position: relative;
-}
-div.supreme img {
-    width: 100%;
-    height: auto;
-    padding:0;
-}
 .middlephoto{
     padding: 10px 25px;
     float: left;
-    width: 50%;
+    width: 100%;
+    text-align: center;
 }
 
 .linksection{
@@ -119,7 +111,38 @@ div.supreme img {
     border: solid thin black;
 }
 .linksection:hover{
-    background-color: black;
-    text-decoration: lightgray;
-    opacity: 0.5;
+    text-decoration: underline blue;
+}
+.letter{
+    text-align: center;
+}
+.letter a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+
+.letter a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    width: 250px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+i{
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    list-style-type: none;
+}
+
+i:hover{
+    background-color: gold;
+    padding: 1%;
 }
